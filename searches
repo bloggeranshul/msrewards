@@ -1,0 +1,31 @@
+for ($a = 0; $a -lt 20; $a++){
+    $RandomSpace = Get-Random -InputObject ("&")
+    $RandomWord = Get-Random -InputObject (get-content C:\Users\GeeK\Desktop\Images\RandomWordList.txt)
+    $RandomQuestion = Get-Random -InputObject("What+is+","Definition+of+","Pronunciation+of+","Thesaurus+","Examples+of+","prefixes+for+","suffixes+for+")
+    Start-Process -FilePath "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList "--profile-directory=`"Default`" http://www.bing.com/search?q=$RandomQuestion$RandomWord" -WindowStyle Minimized
+    start-sleep -Milliseconds 2000
+}
+start-sleep -Milliseconds 2000
+start-process microsoft-edge:https://www.bing.com/rewards/dashboard
+
+
+for ($a = 0; $a -lt 20; $a++){
+    $RandomSpace = Get-Random -InputObject ("&")
+    $RandomWord = Get-Random -InputObject (get-content C:\Users\GeeK\Desktop\Images\RandomWordList.txt)
+    $RandomQuestion = Get-Random -InputObject("What+is+","Definition+of+","Pronunciation+of+","Thesaurus+","Examples+of+","prefixes+for+","suffixes+for+")
+    Start-Process -FilePath "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList "--profile-directory=`"Profile 0`" http://www.bing.com/search?q=$RandomQuestion$RandomWord" -WindowStyle Minimized
+    start-sleep -Milliseconds 2000
+}
+start-sleep -Milliseconds 2000
+start-process microsoft-edge:https://www.bing.com/rewards/dashboard
+
+
+for ($a = 0; $a -lt 20; $a++){
+    $RandomSpace = Get-Random -InputObject ("&")
+    $RandomWord = Get-Random -InputObject (get-content C:\Users\GeeK\Desktop\Images\RandomWordList.txt)
+    $RandomQuestion = Get-Random -InputObject("What+is+","Definition+of+","Pronunciation+of+","Thesaurus+","Examples+of+","prefixes+for+","suffixes+for+")
+    Start-Process -FilePath "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList "--profile-directory=`"Profile 1`" http://www.bing.com/search?q=$RandomQuestion$RandomWord" -WindowStyle Minimized
+    start-sleep -Milliseconds 2000
+}
+start-sleep -Milliseconds 2000
+start-process microsoft-edge:https://www.bing.com/rewards/dashboard
